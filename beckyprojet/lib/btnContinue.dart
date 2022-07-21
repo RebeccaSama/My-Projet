@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'LogIn.dart';
 
-import 'login.dart';
-
-class btnStart extends StatefulWidget {
-  const btnStart({Key? key}) : super(key: key);
+class BtnContinue extends StatefulWidget {
+  const BtnContinue({ Key? key }) : super(key: key);
 
   @override
-  State<btnStart> createState() => _btnStartState();
+  State<BtnContinue> createState() => _BtnContinueState();
 }
 
-class _btnStartState extends State<btnStart> {
+class _BtnContinueState extends State<BtnContinue> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -20,7 +19,7 @@ class _btnStartState extends State<btnStart> {
               color: Colors.blue[900], borderRadius: BorderRadius.circular(30)),
           height: 45,
           width: 250,
-          child: const Text('Start learning',
+          child: const Text('Continue',
               style: TextStyle(fontSize: 18, color: Colors.white))),
       onTap: () {
         Navigator.push(

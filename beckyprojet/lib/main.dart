@@ -1,8 +1,6 @@
 import 'package:beckyprojet/start.dart';
 import 'package:flutter/material.dart';
 
-import 'button.dart';
-
 void main() {
   runApp(const MyApp());
 }

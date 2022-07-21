@@ -1,33 +1,32 @@
+import 'package:beckyprojet/welcome.dart';
 import 'package:flutter/material.dart';
 
-import 'login.dart';
-
-class btnStart extends StatefulWidget {
-  const btnStart({Key? key}) : super(key: key);
+class BtnLogIn extends StatefulWidget {
+  const BtnLogIn({Key? key}) : super(key: key);
 
   @override
-  State<btnStart> createState() => _btnStartState();
+  State<BtnLogIn> createState() => _BtnLogInState();
 }
 
-class _btnStartState extends State<btnStart> {
+class _BtnLogInState extends State<BtnLogIn> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
       child: Container(
           alignment: Alignment.center,
-          margin: EdgeInsets.only(top: 70),
+          margin: EdgeInsets.only(top: 5),
           decoration: BoxDecoration(
               color: Colors.blue[900], borderRadius: BorderRadius.circular(30)),
           height: 45,
           width: 250,
-          child: const Text('Start learning',
+          child: const Text('Log in',
               style: TextStyle(fontSize: 18, color: Colors.white))),
       onTap: () {
         Navigator.push(
             context,
             MaterialPageRoute(
                 builder: (context) =>
-                    LogIn())); // Navigate to second route when tapped.
+                    Welcome())); // Navigate to second route when tapped.
       },
     );
   }
